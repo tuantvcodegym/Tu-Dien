@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tu Dien</title>
+    <style>
+        #ctn{
+            width: 300px;
+            margin: auto;
+            margin-top: 200px;
+        }
+        #btn{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<div id="ctn">
+    <input type="text" id="txt"/>
+    <input type="button" id="btn" value="English" onclick="tuan();"/>
+    <div id="dich"></div>
+</div>
+    <script>
+        function tuan() {
+            var a = document.getElementById('txt').value;
+            var b = ['bong da', 'tro choi', 'bat dau', 'nhin'];
+            var c = ['soccer', 'games', 'start', 'look'];
+
+            for (i = 0; i < b.length; i++) {
+                if (a == b[i]) {
+                    document.getElementById('dich').innerHTML = "Tieng anh la: " + c[i];
+                }
+            }
+        }
+    </script>
+</body>
+</html>
